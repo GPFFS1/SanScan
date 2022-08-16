@@ -1,11 +1,12 @@
 import * as React from "react";
 import {Text, StyleSheet, Platform, StatusBar, SafeAreaView } from "react-native";
+import { CameraModule } from "./modules/camera.module";
 
 export const MainScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.text}>
-        hello world
+        Hello World
       </Text>
     </SafeAreaView>
   );
@@ -13,11 +14,7 @@ export const MainScreen = () => {
 
 export const CameraScreen = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>
-        Camera
-      </Text>
-    </SafeAreaView>
+      <CameraModule/>
   );
 }
 
@@ -39,6 +36,5 @@ const styles = StyleSheet.create({
   },
   text: {
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-    
   },
 });

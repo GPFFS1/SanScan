@@ -1,11 +1,12 @@
 import { MainScreen, CameraScreen, SettingScreen } from "./screen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Ionicons, FontAwesome5 } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 
 export function Tabs() {
+
   return (
     <NavigationContainer>
       <Tab.Navigator
